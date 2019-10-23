@@ -11,6 +11,12 @@ public class ScheduleDTO {
 
     private String time;
 
+    public ScheduleDTO(Long flightId, String status, String time) {
+        this.flightId = flightId;
+        this.status = status;
+        this.time = time;
+    }
+
     public Long getFlightId() {
         return flightId;
     }

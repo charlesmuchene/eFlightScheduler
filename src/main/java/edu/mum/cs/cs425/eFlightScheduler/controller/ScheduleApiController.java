@@ -15,8 +15,8 @@ import java.util.Optional;
 /**
  * Schedule api controller
  */
+@CrossOrigin(origins = "*")
 @RestController
-@CrossOrigin()
 @RequestMapping("/eflight/api/schedule")
 public class ScheduleApiController {
 

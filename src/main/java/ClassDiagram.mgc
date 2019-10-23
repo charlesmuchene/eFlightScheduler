@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="edu.mum.cs.cs425.eFlightScheduler.models.Status"
+        x="320" y="183">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="edu.mum.cs.cs425.eFlightScheduler.models.Role" x="629" y="38">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="edu.mum.cs.cs425.eFlightScheduler.models.User"
+            endpointName="users" kind="Simple"/>
+    </Class>
+    <Class name="edu.mum.cs.cs425.eFlightScheduler.models.ScheduleDTO"
+        x="489" y="193">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="edu.mum.cs.cs425.eFlightScheduler.models.User" x="404" y="31">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="edu.mum.cs.cs425.eFlightScheduler.models.Role"
+            endpointName="roles" kind="Simple"/>
+    </Class>
+    <Class name="edu.mum.cs.cs425.eFlightScheduler.models.Schedule"
+        x="79" y="200">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="edu.mum.cs.cs425.eFlightScheduler.models.Flight"
+            endpointName="flight" kind="Simple"/>
+        <Association
+            destinationClassName="edu.mum.cs.cs425.eFlightScheduler.models.Schedule"
+            endpointName="before" kind="Simple"/>
+        <Association
+            destinationClassName="edu.mum.cs.cs425.eFlightScheduler.models.Runway"
+            endpointName="runway" kind="Simple"/>
+        <Association
+            destinationClassName="edu.mum.cs.cs425.eFlightScheduler.models.Schedule"
+            endpointName="after" kind="Simple">
+            <Point x="101" y="280"/>
+        </Association>
+        <Association
+            destinationClassName="edu.mum.cs.cs425.eFlightScheduler.models.Status"
+            endpointName="status" kind="Simple"/>
+    </Class>
+    <Class name="edu.mum.cs.cs425.eFlightScheduler.models.Runway"
+        x="192" y="39">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="edu.mum.cs.cs425.eFlightScheduler.models.Flight" x="20" y="33">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

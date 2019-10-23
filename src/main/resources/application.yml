@@ -1,0 +1,11 @@
+#kafka:
+#  bootstrap-servers: ${spring.embedded.kafka.brokers}
+#  topic:
+#    json: json.t
+kafka:
+  boot:
+    server: localhost:9092
+  topic:
+    json: json.t
+server:
+  port: 8081

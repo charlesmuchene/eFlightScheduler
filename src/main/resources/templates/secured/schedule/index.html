@@ -6,6 +6,8 @@
 <head>
     <title>eFlight Scheduling - Schedule</title>
     <link th:href="@{/css/sechduleStyle.css}" rel="stylesheet">
+    
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
@@ -13,12 +15,12 @@
    
             <div class="schedule_title">
                 <h3> Inbound and outbound Flights </h3>
-                <p> The list of inbound and outbound flights every 3 seconds are listed below, with their from, to , runyway address and their inbound and outbound time respectively  </p>
+                <p> The list of inbound and outbound flights every three seconds are listed below, with their from, to , runyway address and their inbound and outbound time respectively  </p>
             </div>
 
-            <div class="container">
-
-                <div class="card" th:each="sechdule,iterStat : ${sechduled}" th:if="${iterStat.index}<5">
+            <div class="container" id="sechdules">
+            <!--
+                <div class="card" th:each="sechdule,iterStat : ${sechduled}" th:if="${iterStat.index}<1">
                         <h3 class="title" th:text="'Flight NO' + ${sechdule.flight.id}"></h3>
                         <div class="bar">
                             <div class="emptybar"></div>
@@ -40,7 +42,7 @@
                                     <span><i class="fa fa-building"></i></span>
                                 </div>
                                 <div class="text_div">
-                                    <span th:text="${sechdule.flight.airline}"></span><br>
+                                    <span> Iwoa, USA</span><br>
                                 </div>
                             </div>
 
@@ -72,16 +74,15 @@
                             </div>
                         </div>
                 </div>
-                <div id="getResultDiv" style="padding:20px 10px 20px 50px; display:none">
-                    <ul class="list-group">
-                    </ul>
-                </div>
-                
+
+                -->   
+             
             </div>
 
 </div>
 
 <th:block layout:fragment="footer"></th:block>
 
+<script rel="javascript" type="text/javascript" th:src="@{/static/js/sechduler.js}"></script>
 </body>
 </html>
